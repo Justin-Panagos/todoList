@@ -8,4 +8,4 @@ class TaskList(ListView):
     context_object_name = 'tasks'
 
 class TaskDetail(DetailView):
-    model = Task
+    
