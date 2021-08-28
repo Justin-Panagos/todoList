@@ -11,10 +11,7 @@ from .models import Task
 class CustoomLoginView(LoginView):
     template_name = 'base/login.html'
     fields = '__all__'
-    redirect_authenticated_user = True
-    
-    def get_success_url(self):
-        return reverse_lazy('tasks')
+    redi
 
 class TaskList(ListView):
     model = Task

@@ -14,7 +14,7 @@ class CustoomLoginView(LoginView):
     redirect_authenticated_user = True
     
     def get_success_url(self):
-        return reverse_lazy('tasks')
+        return reverse_lazy('')
 
 class TaskList(ListView):
     model = Task
