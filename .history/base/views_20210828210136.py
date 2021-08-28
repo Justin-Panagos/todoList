@@ -22,5 +22,4 @@ class TaskCreate(CreateView):
 
 class TaskUpdate(UpdateView):
     model = Task
-    fields = '__all__'
-    success_url = reverse_lazy('tasks')
+    f
