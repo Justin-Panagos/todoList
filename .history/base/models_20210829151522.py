@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 class Task(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, null = True, blank=True)
     
-    STATUS= [("P1","P1"),("P2","P2"),("P3","P3"),]
+    STATUS= [("P1","P1"),("P2","P2"),("2","P3"),]
     priority = models.CharField(max_length=5, choices=STATUS,default='',)
     
     title = models.CharField(max_length=200)

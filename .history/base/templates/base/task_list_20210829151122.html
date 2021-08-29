@@ -39,9 +39,8 @@
             {% else %}
                 <div class="task-title">
                     <div class="task-incomplete-icon"></div>
-                    
-                    <a href="{% url 'task-update' task.id%}"><span>{{task.priority}} :</span>{{task}}</a>
-                
+                    <a href="{% url 'task-update' task.id%}">{{task}}</a>
+                    <p>{{request.user.title}}</p>
                 </div>
                 <div class="options">
                     <a class="update-link" href="{% url 'task-update' task.id%}">&#9998;</a>
