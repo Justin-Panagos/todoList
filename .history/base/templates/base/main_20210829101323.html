@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial=1">
+        <meta description="description" content="">
+        <title>To Do Items</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: #5D5D5D;
+                font-family:'Nunito',sans-serif;
+                padding-top:50px;
+            }
+            .container{
+                max-width:550px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #FFF;
+                padding:30px;
+                border-radius:20px
+
+                -webkit-box-shadow: inset 0
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            {% block content %}
+
+            {% endblock content %}
+        </div>
+    </body>
+<html>
