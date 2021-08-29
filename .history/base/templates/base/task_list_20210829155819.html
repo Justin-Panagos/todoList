@@ -22,7 +22,7 @@
 </div>
 <div id="task-wrapper">
     <div class="task-title">
-        <h4>Priority | Task :</h4>
+        <h4>Priority Task :</h4>
     </div>
     <div>
           
@@ -42,7 +42,7 @@
                 <div class="task-title">
                     <div class="task-complete-icon"></div>
                     <i><s><a href="{% url 'task-update' task.id%}"><span>{{task.priority}} :</span>{{task}}</a></s></i>            
-                </div>                
+                </div>
                 <div>{{task.duedate}}</div>
                 <div class="options">
                     <a class="update-link" href="{% url 'task-update' task.id%}">&#9998;</a>
@@ -59,7 +59,6 @@
                 </div>
                 <div>{{task.duedate}}</div>
                 <div class="options">
-                    
                     <a class="update-link" href="{% url 'task-update' task.id%}">&#9998;</a>
                     <a class="delete-link" href="{% url 'task-delete' task.id%}">&#10006;</a>
                 </div>

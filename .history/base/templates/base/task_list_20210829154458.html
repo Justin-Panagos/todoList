@@ -20,19 +20,7 @@
     </form>
     <a id="add-link" href="{% url 'task-create' %}" >&#x2b;</a>
 </div>
-<div id="task-wrapper">
-    <div class="task-title">
-        <h4>Priority | Task :</h4>
-    </div>
-    <div>
-          
-        <h4>Due Date :</h4>
-    </div>
-    <div>
-      
-        <h4>Edit/Delete :</h4>
-    </div>       
-</div>
+<div></div>
 
 <div class="task-items-wrapper">
     {% for task in tasks %}
@@ -41,8 +29,8 @@
             {% if task.complete %}
                 <div class="task-title">
                     <div class="task-complete-icon"></div>
-                    <i><s><a href="{% url 'task-update' task.id%}"><span>{{task.priority}} :</span>{{task}}</a></s></i>            
-                </div>                
+                    <i><s><a href="{% url 'task-update' task.id%}">{{task}}</a></s></i>            
+                </div>
                 <div>{{task.duedate}}</div>
                 <div class="options">
                     <a class="update-link" href="{% url 'task-update' task.id%}">&#9998;</a>
@@ -59,7 +47,6 @@
                 </div>
                 <div>{{task.duedate}}</div>
                 <div class="options">
-                    
                     <a class="update-link" href="{% url 'task-update' task.id%}">&#9998;</a>
                     <a class="delete-link" href="{% url 'task-delete' task.id%}">&#10006;</a>
                 </div>
