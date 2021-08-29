@@ -1,8 +1,8 @@
 # todoList
 
-switch to the master branch and donalod the code from there.
+switch to the master branch and downalod the code from there.
 
-Once you have the file downlaod it, open it in your IDE, I cd into the file with CMD and then open it with the cd command
+Once you have the file downlaod, open it in your IDE, I cd into the file with CMD and then open it with the cd command
 >code .
 
 open the terminal page and start the server :
