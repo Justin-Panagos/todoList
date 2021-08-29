@@ -28,7 +28,7 @@
             {% if task.complete %}
                 <div class="task-title">
                     <div class="task-complete-icon"></div>
-                    <i><s><a href="{% url 'task-update' task.id%}">{{task}}</a></s></i>              
+                    <i><s><a href="{% url 'task-update' task.id%}">{{task}}</a></s></i>                
                 </div>
                 <div class="options">
                     <a class="update-link" href="{% url 'task-update' task.id%}">&#9998;</a>
@@ -48,7 +48,7 @@
             {% endif %}        
         </div>
     {% empty %}
-    <p style="padding:10px;">No items in list</p>
+    <p style=":>No items in list</p>
     {% endfor %}
 </div>
 
