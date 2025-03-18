@@ -1,1 +1,1 @@
-# first dnago opp
+# first django opp
